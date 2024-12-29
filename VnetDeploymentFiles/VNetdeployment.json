@@ -1,0 +1,246 @@
+{
+  "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Resources/deployments/Vnet1-1735505506088",
+  "name": "Vnet1-1735505506088",
+  "type": "Microsoft.Resources/deployments",
+  "properties": {
+    "templateHash": "7656956330183677142",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "southafricanorth"
+      },
+      "extendedLocation": {
+        "type": "Object",
+        "value": {}
+      },
+      "virtualNetworkName": {
+        "type": "String",
+        "value": "Vnet1"
+      },
+      "tagsByResource": {
+        "type": "Object",
+        "value": {
+          "Microsoft.Network/virtualNetworks": {},
+          "Microsoft.Network/ddosProtectionPlans": {},
+          "Microsoft.Network/publicIPAddresses": {},
+          "Microsoft.Network/azureFirewalls": {},
+          "Microsoft.Network/bastionHosts": {},
+          "Microsoft.Network/natGateways": {},
+          "Microsoft.Network/publicIPPrefixes": {},
+          "Microsoft.Network/networkSecurityGroups": {}
+        }
+      },
+      "addressSpace": {
+        "type": "Object",
+        "value": {
+          "addressPrefixes": [
+            "10.1.0.0/16"
+          ]
+        }
+      },
+      "encryptionEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "encryptionEnforcement": {
+        "type": "String",
+        "value": "AllowUnencrypted"
+      },
+      "subnets": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "default",
+            "properties": {
+              "addressPrefixes": [
+                "10.1.0.0/24"
+              ],
+              "privateEndpointNetworkPolicies": "Disabled",
+              "serviceEndpointPolicies": null
+            }
+          }
+        ]
+      },
+      "ddosProtectionPlanEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "bastionEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "ddosProtectionPlanIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallPublicIpAddressIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallPolicyIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallPolicyManagementPublicIPAddressIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "bastionPublicIpAddressIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "bastionNsgIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "ddosProtectionPlanName": {
+        "type": "String",
+        "value": "##ddos-protection-plan-name-not-set##"
+      },
+      "ddosProtectionPlanId": {
+        "type": "String",
+        "value": "##ddos-protection-plan-id-not-set##"
+      },
+      "firewallName": {
+        "type": "String",
+        "value": "##firewall-name-not-set##"
+      },
+      "firewallSkuTier": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "firewallPublicIpAddressName": {
+        "type": "String",
+        "value": "##firewall-public-ip-name-not-set##"
+      },
+      "firewallPublicIpAddressId": {
+        "type": "String",
+        "value": ""
+      },
+      "firewallPolicyName": {
+        "type": "String",
+        "value": "##firewall-policy-name-not-set##"
+      },
+      "firewallPolicyId": {
+        "type": "String",
+        "value": "##firewall-policy-id-not-set##"
+      },
+      "firewallPolicyTier": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "firewallPolicyManagementPublicIPAddressName": {
+        "type": "String",
+        "value": "##firewall-policy-management-public-i-p-address-name-not-set##"
+      },
+      "firewallPolicyManagementPublicIPAddressId": {
+        "type": "String",
+        "value": "##firewall-policy-management-public-i-p-address-id-not-set##"
+      },
+      "bastionName": {
+        "type": "String",
+        "value": "##bastion-name-not-set##"
+      },
+      "bastionPublicIpAddressName": {
+        "type": "String",
+        "value": "##bastion-public-ip-address-name-not-set##"
+      },
+      "bastionPublicIPAddressId": {
+        "type": "String",
+        "value": ""
+      },
+      "bastionNsgName": {
+        "type": "String",
+        "value": "##bastion-nsg-name-not-set##"
+      },
+      "bastionNsgId": {
+        "type": "String",
+        "value": "##bastion-nsg-id-not-set##"
+      },
+      "natGatewaysWithNewPublicIpAddress": {
+        "type": "Array",
+        "value": []
+      },
+      "natGatewaysWithoutNewPublicIpAddress": {
+        "type": "Array",
+        "value": []
+      },
+      "natGatewayPublicIpAddressesNewNames": {
+        "type": "Array",
+        "value": []
+      },
+      "networkSecurityGroupsNew": {
+        "type": "Array",
+        "value": []
+      },
+      "ipv6Enabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "subnetCount": {
+        "type": "Int",
+        "value": 1
+      },
+      "addressSpaceStartingAddressChanged": {
+        "type": "Bool",
+        "value": true
+      },
+      "addressSpaceAddressSizeChanged": {
+        "type": "Bool",
+        "value": false
+      },
+      "defaultSubnetChanged": {
+        "type": "Bool",
+        "value": true
+      },
+      "subnetsInfo": {
+        "type": "Array",
+        "value": [
+          {
+            "cidr": "10.1.0.0/24",
+            "name": "Default",
+            "natGw": "none",
+            "nsg": "none",
+            "udr": "none"
+          }
+        ]
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2024-12-29T20:51:07.855297Z",
+    "duration": "PT10.8530391S",
+    "correlationId": "ee7ec668-922f-41e3-98d5-d6fa1d964ab8",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualNetworks",
+            "locations": [
+              "southafricanorth"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [],
+    "outputResources": [
+      {
+        "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Network/virtualNetworks/Vnet1"
+      }
+    ],
+    "validationLevel": "Template"
+  },
+  "tags": {
+    "primaryResourceId": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourcegroups/VNetTestResourceGroup/providers/Microsoft.Network/virtualNetworks/Vnet1",
+    "marketplaceItemId": "Microsoft.VirtualNetwork-ARM"
+  }
+}

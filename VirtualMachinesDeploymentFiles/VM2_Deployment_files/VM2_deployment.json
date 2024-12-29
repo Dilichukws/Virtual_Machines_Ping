@@ -1,0 +1,216 @@
+{
+  "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20241229223217",
+  "name": "CreateVm-MicrosoftWindowsServer.WindowsServer-201-20241229223217",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourcegroups/VNetTestResourceGroup/providers/Microsoft.Compute/virtualMachines/VM2",
+    "marketplaceItemId": "Microsoft.VirtualMachine-ARM",
+    "provisioningHash": "SolutionProvider"
+  },
+  "properties": {
+    "templateHash": "16310849975130623916",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "southafricanorth"
+      },
+      "networkInterfaceName1": {
+        "type": "String",
+        "value": "vm2567_z1"
+      },
+      "enableAcceleratedNetworking": {
+        "type": "Bool",
+        "value": true
+      },
+      "networkSecurityGroupName": {
+        "type": "String",
+        "value": "VM2-nsg"
+      },
+      "networkSecurityGroupRules": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "RDP",
+            "properties": {
+              "priority": 300,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "3389"
+            }
+          }
+        ]
+      },
+      "subnetName": {
+        "type": "String",
+        "value": "default"
+      },
+      "virtualNetworkId": {
+        "type": "String",
+        "value": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Network/virtualNetworks/Vnet1"
+      },
+      "publicIpAddressName1": {
+        "type": "String",
+        "value": "Vm-2_IP"
+      },
+      "publicIpAddressType": {
+        "type": "String",
+        "value": "Static"
+      },
+      "publicIpAddressSku": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "pipDeleteOption": {
+        "type": "String",
+        "value": "Detach"
+      },
+      "virtualMachineName": {
+        "type": "String",
+        "value": "VM2"
+      },
+      "virtualMachineName1": {
+        "type": "String",
+        "value": "VM2"
+      },
+      "virtualMachineComputerName1": {
+        "type": "String",
+        "value": "VM2"
+      },
+      "virtualMachineRG": {
+        "type": "String",
+        "value": "VNetTestResourceGroup"
+      },
+      "osDiskType": {
+        "type": "String",
+        "value": "Premium_LRS"
+      },
+      "osDiskDeleteOption": {
+        "type": "String",
+        "value": "Delete"
+      },
+      "virtualMachineSize": {
+        "type": "String",
+        "value": "Standard_D2s_v3"
+      },
+      "nicDeleteOption": {
+        "type": "String",
+        "value": "Detach"
+      },
+      "hibernationEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "adminUsername": {
+        "type": "String",
+        "value": "azureuser2"
+      },
+      "adminPassword": {
+        "type": "SecureString"
+      },
+      "patchMode": {
+        "type": "String",
+        "value": "AutomaticByOS"
+      },
+      "enableHotpatching": {
+        "type": "Bool",
+        "value": false
+      },
+      "securityType": {
+        "type": "String",
+        "value": "TrustedLaunch"
+      },
+      "secureBoot": {
+        "type": "Bool",
+        "value": true
+      },
+      "vTPM": {
+        "type": "Bool",
+        "value": true
+      },
+      "virtualMachine1Zone": {
+        "type": "String",
+        "value": "1"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2024-12-29T21:40:21.5415357Z",
+    "duration": "PT12.2323739S",
+    "correlationId": "3fc844a3-5b2e-4ac8-b5f1-dfe7fc27f9db",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "networkInterfaces",
+            "locations": [
+              "southafricanorth"
+            ]
+          },
+          {
+            "resourceType": "networkSecurityGroups",
+            "locations": [
+              "southafricanorth"
+            ]
+          },
+          {
+            "resourceType": "publicIpAddresses",
+            "locations": [
+              "southafricanorth"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Compute",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualMachines",
+            "locations": [
+              "southafricanorth"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Network/networkSecurityGroups/VM2-nsg",
+            "resourceType": "Microsoft.Network/networkSecurityGroups",
+            "resourceName": "VM2-nsg"
+          },
+          {
+            "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Network/publicIpAddresses/Vm-2_IP",
+            "resourceType": "Microsoft.Network/publicIpAddresses",
+            "resourceName": "Vm-2_IP"
+          }
+        ],
+        "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Network/networkInterfaces/vm2567_z1",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "vm2567_z1"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Network/networkInterfaces/vm2567_z1",
+            "resourceType": "Microsoft.Network/networkInterfaces",
+            "resourceName": "vm2567_z1"
+          }
+        ],
+        "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Compute/virtualMachines/VM2",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "VM2"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
