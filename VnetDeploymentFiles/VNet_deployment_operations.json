@@ -1,0 +1,31 @@
+[
+  {
+    "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Resources/deployments/Vnet1-1735505506088/operations/AFFD2385FDA0990C",
+    "operationId": "AFFD2385FDA0990C",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-12-29T20:51:07.7244608Z",
+      "duration": "PT9.0725814S",
+      "trackingId": "a32dcfa4-dcea-47fd-8b64-682cd165a136",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Network/virtualNetworks/Vnet1",
+        "resourceType": "Microsoft.Network/virtualNetworks",
+        "resourceName": "Vnet1"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/eafb9252-9f74-4cf4-a8ac-655c157f5f6e/resourceGroups/VNetTestResourceGroup/providers/Microsoft.Resources/deployments/Vnet1-1735505506088/operations/08584661014285824835",
+    "operationId": "08584661014285824835",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-12-29T20:51:07.8191573Z",
+      "duration": "PT9.1672779S",
+      "trackingId": "c51bc624-d76c-478f-b97d-d0e3b7e422f6",
+      "statusCode": "OK"
+    }
+  }
+]
